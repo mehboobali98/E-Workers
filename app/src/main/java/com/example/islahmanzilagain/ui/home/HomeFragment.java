@@ -3,6 +3,7 @@ package com.example.islahmanzilagain.ui.home;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +22,9 @@ import com.example.islahmanzilagain.Login;
 import com.example.islahmanzilagain.MainCat;
 import com.example.islahmanzilagain.R;
 import com.example.islahmanzilagain.SignUp;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -43,11 +47,19 @@ public class HomeFragment extends Fragment {
     private HomeViewModel homeViewModel;
     SliderView sliderView;
     private SliderAdapterExample adapter;
+    private AdView mAdView;
+
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         final View root = inflater.inflate(R.layout.fragment_home, container, false);
+
+        Log.d("MyAd", "Before initializing ad.");
+        MobileAds.initialize(getContext(), "ca-app-pub-3940256099942544~3347511713");
+        mAdView = (AdView) root.findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
 
         sliderView = root.findViewById(R.id.imageSlider);
