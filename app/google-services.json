@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "134957504894",
+    "firebase_url": "https://islah-manzil.firebaseio.com",
+    "project_id": "islah-manzil",
+    "storage_bucket": "islah-manzil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134957504894:android:0a0b8c2ae5183dbf173b2f",
+        "android_client_info": {
+          "package_name": "com.example.islahmanzilagain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134957504894-p31r2dhd28aoucnlmse7j56sbn2mast4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.islahmanzilagain",
+            "certificate_hash": "f6560a4f04704189bc861994c15f79524f032575"
+          }
+        },
+        {
+          "client_id": "134957504894-jerdnvi8ma8l7hku7u3sg3u0124en53f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.islahmanzilagain",
+            "certificate_hash": "8ca2da0637738c419e0fecc866ba0bf0403be4ed"
+          }
+        },
+        {
+          "client_id": "134957504894-eau0kqb7d9euut24qbb62baqtd8aof8f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQZOOidvc-yTxCkdTjei4yRRnVotoMeqI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134957504894-eau0kqb7d9euut24qbb62baqtd8aof8f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

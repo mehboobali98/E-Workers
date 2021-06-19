@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Islah Manzil</string>
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+    <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
+    <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
+    <string name="title_activity_title">Title</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="map_key" translatable="false">AIzaSyAjCkwcmk7AzbXELey-GHjUiJu2ZJeKMsQ</string>
+    <string-array name="Areas">
+        <item>Doha</item>
+        <item>Al-Wakrah</item>
+        <item>Al-Rayyan</item>
+        <item>Al-Khor</item>
+        <item>Umm Salal</item>
+        <item>Al-Ghuwariyah</item>
+        <item>Aljamilya</item>
+        <item>Madinat Ash Shamal</item>
+        <item>Mesaieed</item>
+        <item>Al-Shahania</item>
+    </string-array>
+
+    <!-- Plumber details-->
+
+    <string-array name="PlumbingService">
+        <item>Blocks and Leakage</item>
+        <item>Taps and Mixer</item>
+        <item>Basin and Sink</item>
+        <item>Toilet and Sanitary Work</item>
+        <item>Shower</item>
+        <item>Water Pump</item>
+        <item>Water Filter</item>
+        <item>Water Heater</item>
+        <item>Pipelines</item>
+        <item>others</item>
+    </string-array>
+
+
+    <string-array name="HouseType">
+        <item>Villa</item>
+        <item>Apartment</item>
+        <item>Building</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="Time">
+        <item>Today</item>
+        <item>Tomorrow</item>
+        <item>This Week</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Electrician -->
+    <string-array name="ElectricianService">
+        <item>Fans</item>
+        <item>Switch Boards</item>
+        <item>Lighting</item>
+        <item>Water pump</item>
+        <item>Water heater</item>
+        <item>Electrical Appliance</item>
+        <item>Other</item>
+    </string-array>
+
+    <!-- Hair Dresses -->
+
+    <string-array name="HairService">
+        <item>Hair cut</item>
+        <item>Beard and Moustache</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- Beautician -->
+    <string-array name="BeauticianService">
+        <item>Hair cut</item>
+        <item>Makeup</item>
+        <item>Manicure</item>
+        <item>Pedicure</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- Laundary -->
+    <string-array name="LaundaryService">
+        <item>Washing</item>
+        <item>Press</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- Laundary -->
+    <string-array name="AcService">
+        <item>Transfer or Installation</item>
+        <item>Gas filling and cleaning</item>
+        <item>AC repairs</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="unitType">
+        <item>Split</item>
+        <item>Window</item>
+        <item>Central Air Conditioner</item>
+    </string-array>
+
+    <string-array name="NumberofUnits">
+        [$ foreach my $i (1..100) $]
+        <item>i</item>
+        [$ endforeach $]
+    </string-array>
+
+
+    <!-- Pest Control -->
+
+    <string-array name="pestService">
+        <item>Room/Kitchen</item>
+        <item>Full Villa</item>
+        <item>Apartment</item>
+        <item>Building</item>
+        <item>Other</item>
+    </string-array>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

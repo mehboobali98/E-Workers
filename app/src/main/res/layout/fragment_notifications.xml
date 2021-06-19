@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Settings"
+            android:textColor="#000000"
+            android:textSize="100px"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profileText"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_yellow"
+            android:gravity="center_vertical"
+            android:text=" Profile"
+            android:textAlignment="center"
+            android:textColor="@color/sett"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/emailus"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_yellow"
+            android:gravity="center_vertical"
+            android:text=" Email us"
+
+            android:textAlignment="center"
+            android:textColor="@color/sett"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/shareApp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_yellow"
+            android:gravity="center_vertical"
+            android:text=" Share App"
+
+            android:textAlignment="center"
+            android:textColor="@color/sett"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/rounded_yellow"
+            android:gravity="center_vertical"
+            android:text=" Rate App"
+
+            android:textAlignment="center"
+            android:textColor="@color/sett"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/rounded_yellow"
+            android:gravity="center_vertical"
+            android:text=" About App"
+
+            android:textAlignment="center"
+            android:textColor="@color/sett"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:text="Phone: 00974 50847733"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/logoutbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/not_rounded"
+            android:text="Logout" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
