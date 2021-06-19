@@ -67,15 +67,15 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <TextView
-                    android:id="@+id/textView8"
+
+                <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="Select a Service"
-                    android:textColor="@color/myAppTheme"
-                    android:textSize="25dp" />
+                    app:adSize="BANNER"
+                    android:paddingLeft="40dp"
+                    android:layout_gravity="center_vertical"
+                    app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
 
                 <LinearLayout
                     android:layout_width="match_parent"
