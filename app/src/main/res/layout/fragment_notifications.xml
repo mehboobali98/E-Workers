@@ -19,9 +19,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="30dp"
             android:text="Settings"
+            android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="100px"
-
             android:textStyle="bold" />
 
         <TextView
@@ -30,11 +30,10 @@
             android:layout_height="35dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_yellow"
-            android:gravity="center_vertical"
             android:text=" Profile"
             android:textAlignment="center"
             android:textColor="@color/sett"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/emailus"
@@ -42,12 +41,10 @@
             android:layout_height="35dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_yellow"
-            android:gravity="center_vertical"
             android:text=" Email us"
-
             android:textAlignment="center"
             android:textColor="@color/sett"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/shareApp"
@@ -55,12 +52,10 @@
             android:layout_height="35dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_yellow"
-            android:gravity="center_vertical"
             android:text=" Share App"
-
             android:textAlignment="center"
             android:textColor="@color/sett"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView13"
@@ -68,41 +63,32 @@
             android:layout_height="35dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_yellow"
-            android:gravity="center_vertical"
             android:text=" Rate App"
-
             android:textAlignment="center"
             android:textColor="@color/sett"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/about"
             android:layout_width="match_parent"
             android:layout_height="35dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_yellow"
-            android:gravity="center_vertical"
             android:text=" About App"
-
             android:textAlignment="center"
             android:textColor="@color/sett"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/textView23"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="40dp"
-            android:text="Phone: 00974 50847733"
-            android:textAlignment="center" />
+            android:textSize="20sp" />
 
         <Button
-            android:id="@+id/logoutbutton"
+            android:id="@+id/logout_btn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:layout_marginLeft="3dp"
-            android:layout_marginRight="3dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/not_rounded"
-            android:text="Logout" />
+            android:text="@string/logout"
+            android:textColor="@color/redColor"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
