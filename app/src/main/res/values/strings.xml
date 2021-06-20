@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Islah Manzil</string>
+    <string name="app_name">E-Workers</string>
     <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
     <string name="facebook_application_id" translatable="false">YOUR_APP_ID</string>
     <string name="facebook_login_protocol_scheme" translatable="false">fbYOUR_APP_ID</string>
@@ -8,17 +8,18 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="map_key" translatable="false">AIzaSyAjCkwcmk7AzbXELey-GHjUiJu2ZJeKMsQ</string>
+
     <string-array name="Areas">
-        <item>Doha</item>
-        <item>Al-Wakrah</item>
-        <item>Al-Rayyan</item>
-        <item>Al-Khor</item>
-        <item>Umm Salal</item>
-        <item>Al-Ghuwariyah</item>
-        <item>Aljamilya</item>
-        <item>Madinat Ash Shamal</item>
-        <item>Mesaieed</item>
-        <item>Al-Shahania</item>
+        <item>Lahore</item>
+        <item>Islamabad</item>
+        <item>Karachi</item>
+        <item>Quetta</item>
+        <item>Peshawar</item>
+        <item>Murree</item>
+        <item>Sialkot</item>
+        <item>Jhelum</item>
+        <item>Gujrat</item>
+        <item>Jhang</item>
     </string-array>
 
     <!-- Plumber details-->
@@ -117,4 +118,5 @@
         <item>Other</item>
     </string-array>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="About_us">E-Workers is an exclusive application for maintenance services for millions of customers in Pakistan. \n\n E-Workers provides there costumer easy and best service. There is a team of hardworking people behind this project to deliver best products to customers.\n\n We provide best AC services also we deal in new ac units as well. Best electric workers to do all your electricity tasks. Best beauticians and hair dresser for you. \n\nAs this is the world of information technology and everyone wants to get ease in life. This app will provide people ease in solving their daily life problematic tasks. We are very keen to give best services to our customers and satisfy there every need. \n\nHopefully we will do every task with full effort and courage that our customers will always feel encouraged contacting us in there every work. \n\nWe have the best workers and a hardworking team that will serve with full effort. \n\nFor any queries feel free to contact us: Email: EWorkers@gmail.com \n\n Phone/WhatsApp: 090078601</string>
 </resources>
