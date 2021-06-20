@@ -13,8 +13,8 @@ public class EmailUs extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_us);
-        final ImageView aboutus = (ImageView) findViewById(R.id.bk);
-        aboutus.setOnClickListener(new View.OnClickListener() {
+        final ImageView aboutUs = (ImageView) findViewById(R.id.bk);
+        aboutUs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent myIntent = new Intent(getApplicationContext(),

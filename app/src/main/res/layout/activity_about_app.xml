@@ -62,7 +62,7 @@
                 android:layout_marginBottom="30dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:text="Islahmanzil is an exclusive application for maintenance services for millions of customers in Qatar. \n\nIslahmanzil provides there costumer easy and best service. There is a team of hardworking people behind this project to deliver best products to customers.\n\nWe provide best AC services also we deal in new ac units as well. Best electric workers to do all your electricity tasks. Best beauticians and hair dresser for you. \n\nAs this is the world of information technology and everyone wants to get ease in life. This app will provide people ease in solving their daily life problematic tasks. We are very keen to give best services to our customers and satisfy there every need. \n\nHopefully we will do every task with full effort and courage that our customers will always feel encouraged contacting us in there every work. \n\nWe have the best workers and a hardworking team that will serve with full effort.  \n\nFor any queries feel free to contact us: Email: manzilislah@gmail.com \n\nPhone/Whatsapp: 00974 50847733 – 00974 70572020 "
+                android:text="@string/About_us"
                 android:textColor="@color/sett"
                 android:textSize="12dp" />/>
             />

@@ -15,7 +15,7 @@ public class Strings {
 
     public static final String ADMINNUMBER = "1234567891";
 
-    public static final String shareMessage = "Check out Islah Manzil!";
+    public static final String shareMessage = "Check out E-Workers!";
     public static final String shareSubject = "Share Subject";
 
     public static final String DOCUMENTID = "DOCUMENTID";

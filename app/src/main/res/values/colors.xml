@@ -8,4 +8,5 @@
     <color name="itemSelectedColor">#FFC107</color>
     <color name="sett">#1B1A1A</color>
     <color name="greyCOLOR">#671B1A1A</color>
+    <color name="redColor">#DA1203</color>
 </resources>

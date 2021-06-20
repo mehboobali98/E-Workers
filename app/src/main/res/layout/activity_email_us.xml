@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EmailUs"
     android:screenOrientation="portrait"
-    >
+    tools:context=".EmailUs">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,7 +47,7 @@
             android:paddingBottom="5dp"
             android:text="For Complaints and Queries you can contact us at:"
             android:textColor="@color/textColor"
-            android:textSize="20dp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView27"
@@ -57,9 +56,8 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="30dp"
 
-            android:text=" Manzilislah@gmail.com"
+            android:text="@string/contact_email"
             android:textColor="@color/myAppTheme"
-            android:textSize="20dp" />/>
-        />
+            android:textSize="20sp" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

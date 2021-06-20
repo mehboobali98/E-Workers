@@ -81,7 +81,7 @@ public class NotificationsFragment extends Fragment {
         });
 
 
-        final Button logoutButton = (Button) root.findViewById(R.id.logoutbutton);
+        final Button logoutButton = (Button) root.findViewById(R.id.logout_btn);
 
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
