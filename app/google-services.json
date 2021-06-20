@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "540800458751",
+    "project_id": "e-workers-b4a64",
+    "storage_bucket": "e-workers-b4a64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540800458751:android:4a8e6c17a284ab7f1211ca",
+        "android_client_info": {
+          "package_name": "com.example.eworkers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540800458751-vb4mu713kpq7kpvsu98icf2ngetj4gdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrl28pfJ1fv4QcbBlt5gLH-DwA6iqN6_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540800458751-vb4mu713kpq7kpvsu98icf2ngetj4gdb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "540800458751-bau5r25uc4f9a55aqsg61p0vunrmn322.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.eworkers"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
