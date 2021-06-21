@@ -1,6 +1,8 @@
 package com.example.eworkers;
 
 import android.content.Intent;
+import android.content.IntentFilter;
+import android.net.ConnectivityManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Parcelable;
@@ -22,8 +24,7 @@ import ViewModels.UserViewModel;
 
 public class SplashScreen extends AppCompatActivity {
 
-    private static int TIME = 2000;
-    final int RC_SIGN_IN = 123;
+    private ConnectivityReceiver connectivityReceiver;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,9 +32,9 @@ public class SplashScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        //IslahManzil.getIslah().logout();
-        //API.getInstance().fireRepo.logout();
         /*
+        IslahManzil.getIslah().logout();
+        API.getInstance().fireRepo.logout();
         ProgressDialog progress = new ProgressDialog(this);
         progress.setTitle("WELCOME");
         progress.setMessage("Loading...");
@@ -41,7 +42,14 @@ public class SplashScreen extends AppCompatActivity {
         progress.setIndeterminate(true);
         progress.show();*/
 
-        Intent intent = new Intent(this, AuthenticationService.class);
-        startService(intent);
+        connectivityReceiver = new ConnectivityReceiver();
+        IntentFilter intentFilter = new IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION);
+        registerReceiver(connectivityReceiver, intentFilter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        unregisterReceiver(connectivityReceiver);
     }
 }

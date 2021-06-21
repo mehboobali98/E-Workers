@@ -23,6 +23,7 @@ import ViewModels.UserViewModel;
 public class AuthenticationService extends Service {
     private FirebaseAuth mAuth;
     private FirebaseUser currentUser;
+    public static boolean isRunning = false;
 
     @Override
     public void onCreate() {
@@ -36,6 +37,7 @@ public class AuthenticationService extends Service {
         super.onStartCommand(intent, flags, startId);
         Log.d("MyServiceTag", "Authenticate Service Started.");
         authenticate();
+        isRunning = true;
         return Service.START_REDELIVER_INTENT;
     }
 
@@ -89,5 +91,13 @@ public class AuthenticationService extends Service {
     @Override
     public IBinder onBind(Intent intent) {
         return null;
+    }
+
+    public static boolean isIsRunning() {
+        return isRunning;
+    }
+
+    public static void setIsRunning(boolean isRunning) {
+        AuthenticationService.isRunning = isRunning;
     }
 }
