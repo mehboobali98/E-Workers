@@ -14,7 +14,6 @@ import Models.Mod;
 public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.OrderItemViewHolder> {
 
     List<Mod> orderList;
-
     OnOrderClick click;
 
     public OrderItemAdapter(List<Mod> ls, OnOrderClick click){
@@ -37,7 +36,6 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.Orde
         String dataWhole = orderList.get(position).getSting();
         String dataBroken[] = dataWhole.split("\\^");
 
-
         // ****************************************** FIX THIS FROM THE UPLOADING PART ****************************************
         try {
             holder.txt1.setText("Order Specifications: " + dataBroken[0].replace("!@#", " "));
@@ -46,7 +44,6 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.Orde
         catch (Exception e){
             System.out.println(e);
         }
-
     }
 
     @Override
@@ -74,14 +71,12 @@ public class OrderItemAdapter extends RecyclerView.Adapter<OrderItemAdapter.Orde
             orderClick.onOrderClick(getAdapterPosition(), orderList.get(getAdapterPosition()));
         }
 
-
         @Override
         public boolean onLongClick(View v) {
             orderClick.onOrderLongClick(getAdapterPosition(), orderList.get(getAdapterPosition()));
             return true;
         }
     }
-
 
     public interface OnOrderClick{
         void onOrderLongClick(int position, Mod selectedFood);

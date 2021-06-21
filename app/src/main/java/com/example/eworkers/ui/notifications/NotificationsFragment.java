@@ -20,7 +20,7 @@ import com.example.eworkers.Profile;
 import com.example.eworkers.R;
 import com.example.eworkers.SplashScreen;
 
-import API.IslahManzil;
+import API.EWorkers;
 import API.Strings;
 
 public class NotificationsFragment extends Fragment {
@@ -86,7 +86,7 @@ public class NotificationsFragment extends Fragment {
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                IslahManzil.getIslah().logout();
+                EWorkers.getIslah().logout();
                 Intent myIntent = new Intent(getContext(),
                         SplashScreen.class);
                 getParentFragment().getActivity().finish();

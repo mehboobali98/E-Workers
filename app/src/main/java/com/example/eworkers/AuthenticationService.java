@@ -15,8 +15,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentSnapshot;
 
+import API.EWorkers;
 import API.FirebaseRepository;
-import API.IslahManzil;
 import API.Strings;
 import ViewModels.UserViewModel;
 
@@ -50,14 +50,14 @@ public class AuthenticationService extends Service {
             Toast.makeText(getApplicationContext(), "User was not signed in", Toast.LENGTH_SHORT);
         } else {
             //The following line will initialize API and hence all the required data
-            IslahManzil.getIslah();
+            EWorkers.getIslah();
             FirebaseRepository.getFire().getUserDataAddress().get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
                 @Override
                 public void onSuccess(DocumentSnapshot documentSnapshot) {
 
                     if (documentSnapshot.getString(Strings.PHONE) == null) {
                         Toast.makeText(getApplicationContext(), "User was signed In but without phone, so logged him out", Toast.LENGTH_LONG).show();
-                        IslahManzil.getIslah().logout();
+                        EWorkers.getIslah().logout();
                         Intent myIntent = new Intent(AuthenticationService.this, SignUp.class);
                         myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(myIntent);
@@ -65,12 +65,12 @@ public class AuthenticationService extends Service {
                         Intent myIntent = new Intent(AuthenticationService.this, AdminPanel.class);
                         myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(myIntent);
-                        IslahManzil.getIslah().setUser(new UserViewModel().getCurrenUser(mAuth.getUid()).getValue());
+                        EWorkers.getIslah().setUser(new UserViewModel().getCurrenUser(mAuth.getUid()).getValue());
                     } else {
                         Intent myIntent = new Intent(AuthenticationService.this, Homescr.class);
                         myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(myIntent);
-                        IslahManzil.getIslah().setUser(new UserViewModel().getCurrenUser(mAuth.getUid()).getValue());
+                        EWorkers.getIslah().setUser(new UserViewModel().getCurrenUser(mAuth.getUid()).getValue());
                     }
                 }
 
@@ -78,7 +78,7 @@ public class AuthenticationService extends Service {
                 @Override
                 public void onFailure(@NonNull Exception e) {
                     Toast.makeText(getApplicationContext(), "User was signed In but without phone document, so logged him out", Toast.LENGTH_LONG).show();
-                    IslahManzil.getIslah().logout();
+                    EWorkers.getIslah().logout();
                     Intent myIntent = new Intent(AuthenticationService.this, SignUp.class);
                     myIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(myIntent);

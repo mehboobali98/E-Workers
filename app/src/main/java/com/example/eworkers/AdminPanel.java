@@ -20,7 +20,7 @@ import com.google.firebase.firestore.DocumentReference;
 import java.util.List;
 
 import API.FirebaseRepository;
-import API.IslahManzil;
+import API.EWorkers;
 import Models.Mod;
 import ViewModels.OrderViewModel;
 
@@ -81,29 +81,16 @@ public class AdminPanel extends AppCompatActivity {
             Intent myIntent = new Intent(getApplicationContext(),
                     AdminMap.class);
             //No need to finish current activity as user can get back using back
-
-
             AdminMap.currentMod = selectedOrder;
-
             startActivity(myIntent);
         }
     };
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_panel);
-
-
-
-
-
-
-
         OrderViewModel vm = new OrderViewModel();
-
         final AdminPanel owner = this;
         vm.getOrders().observe(this, new Observer<List<Mod>>() {
             @Override
@@ -131,20 +118,11 @@ public class AdminPanel extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
-
-
     }
 
     public void logoutClicked(View view) {
-        IslahManzil.getIslah().logout();
-        Intent myIntent = new Intent(getApplicationContext(),
-                SplashScreen.class);
+        EWorkers.getIslah().logout();
+        Intent myIntent = new Intent(getApplicationContext(), SplashScreen.class);
         finish();
         startActivity(myIntent);
     }

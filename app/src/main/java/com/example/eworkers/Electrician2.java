@@ -28,8 +28,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import java.util.HashMap;
 import java.util.Map;
 
+import API.EWorkers;
 import API.FirebaseRepository;
-import API.IslahManzil;
 import API.Strings;
 import Models.User;
 import ViewModels.UserViewModel;
@@ -118,17 +118,17 @@ public class Electrician2 extends Fragment {
 
                         String newData = sp.getSelectedItem().toString()+"!@#"+sp2.getText().toString()+"!@#"+ user.getPhoneNumber()+
                                 "!@#"+ user.getName() + "^";
-                        IslahManzil.getIslah().M[IslahManzil.screennum - 1].setSting(IslahManzil.getIslah().M[IslahManzil.screennum - 1].getSting() + newData);
+                        EWorkers.getIslah().M[EWorkers.screennum - 1].setSting(EWorkers.getIslah().M[EWorkers.screennum - 1].getSting() + newData);
 
                         final Map<String, Object> userData = new HashMap<>();
                         final Map<String, Object> orderAdminData = new HashMap<>();
                         final Map<String, Object> orderPermanentData = new HashMap<>();
-                        userData.put(Strings.NAME, IslahManzil.getIslah().M[IslahManzil.screennum-1].getSting());
+                        userData.put(Strings.NAME, EWorkers.getIslah().M[EWorkers.screennum-1].getSting());
                         userData.put(Strings.TIMESTAMP, FieldValue.serverTimestamp());
-                        orderAdminData.put(Strings.NAME, IslahManzil.getIslah().M[IslahManzil.screennum-1].getSting());
+                        orderAdminData.put(Strings.NAME, EWorkers.getIslah().M[EWorkers.screennum-1].getSting());
                         orderAdminData.put(Strings.TIMESTAMP, FieldValue.serverTimestamp());
 
-                        orderPermanentData.put(Strings.NAME, IslahManzil.getIslah().M[IslahManzil.screennum-1].getSting());
+                        orderPermanentData.put(Strings.NAME, EWorkers.getIslah().M[EWorkers.screennum-1].getSting());
                         orderPermanentData.put(Strings.TIMESTAMP, FieldValue.serverTimestamp());
 
                         DocumentReference doc = FirebaseRepository.getFire().getUserOrderDataAddress().document();

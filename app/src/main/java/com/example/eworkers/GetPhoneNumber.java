@@ -29,8 +29,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import API.EWorkers;
 import API.FirebaseRepository;
-import API.IslahManzil;
 import API.Strings;
 import ViewModels.UserViewModel;
 
@@ -65,7 +65,7 @@ public class GetPhoneNumber extends AppCompatActivity {
                             AdminPanel.class);
                     finish();
                     startActivity(myIntent);
-                    IslahManzil.getIslah().setUser(new UserViewModel().getCurrenUser(FirebaseAuth.getInstance().getCurrentUser().getUid()).getValue());
+                    EWorkers.getIslah().setUser(new UserViewModel().getCurrenUser(FirebaseAuth.getInstance().getCurrentUser().getUid()).getValue());
                 }
                 else{
                     Intent myIntent = new Intent(GetPhoneNumber.this,
@@ -73,7 +73,7 @@ public class GetPhoneNumber extends AppCompatActivity {
                     finish();
                     startActivity(myIntent);
 
-                    IslahManzil.getIslah().setUser(new UserViewModel().getCurrenUser(FirebaseAuth.getInstance().getUid()).getValue());
+                    EWorkers.getIslah().setUser(new UserViewModel().getCurrenUser(FirebaseAuth.getInstance().getUid()).getValue());
                 }
             }
 

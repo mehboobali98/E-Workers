@@ -20,8 +20,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException;
 import com.google.firebase.firestore.DocumentSnapshot;
 
+import API.EWorkers;
 import API.FirebaseRepository;
-import API.IslahManzil;
 import API.Strings;
 import ViewModels.UserViewModel;
 
@@ -35,12 +35,6 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in1);
-
-
-
-
-
-
     }
 
     public void signInTapped(View view) {
@@ -66,11 +60,8 @@ public class Login extends AppCompatActivity {
         }
 
         if(!fieldsEmpty){
-
             signIn(email, password, this);
-
         }
-
     }
 
     public void signUpTapped(View view) {
@@ -110,7 +101,7 @@ public class Login extends AppCompatActivity {
                                                 AdminPanel.class);
                                         finish();
                                         startActivity(myIntent);
-                                        IslahManzil.getIslah().setUser(new UserViewModel().getCurrenUser(FirebaseAuth.getInstance().getCurrentUser().getUid()).getValue());
+                                        EWorkers.getIslah().setUser(new UserViewModel().getCurrenUser(FirebaseAuth.getInstance().getCurrentUser().getUid()).getValue());
                                     }
                                     else{
                                         Intent myIntent = new Intent(Login.this,
@@ -118,7 +109,7 @@ public class Login extends AppCompatActivity {
                                         finish();
                                         startActivity(myIntent);
 
-                                        IslahManzil.getIslah().setUser(new UserViewModel().getCurrenUser(FirebaseAuth.getInstance().getUid()).getValue());
+                                        EWorkers.getIslah().setUser(new UserViewModel().getCurrenUser(FirebaseAuth.getInstance().getUid()).getValue());
                                     }
                                 }
 
@@ -131,9 +122,6 @@ public class Login extends AppCompatActivity {
                                     startActivity(myIntent);
                                 }
                             });
-
-
-
                         } else {
                             try {
                                 throw task.getException();
@@ -145,9 +133,7 @@ public class Login extends AppCompatActivity {
                                 //Toast.makeText(ViewRef.getApplicationContext(), e.toString(), Toast.LENGTH_SHORT).show();
                             }
                         }
-
                     }
                 });
     }
-
 }

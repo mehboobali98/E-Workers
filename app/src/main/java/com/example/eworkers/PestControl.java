@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import API.IslahManzil;
+import API.EWorkers;
 
 
 /**
@@ -80,7 +80,7 @@ public class PestControl extends Fragment {
                 Spinner sp2 = (Spinner) root.findViewById(R.id.service9);
                 String newData =  "PEST CONTROL!@#" + sp.getSelectedItem().toString()+"!@#"+sp2.getSelectedItem().toString()+"^";
 
-                IslahManzil.getIslah().M[IslahManzil.screennum - 1].setSting(IslahManzil.getIslah().M[IslahManzil.screennum - 1].getSting() + newData);
+                EWorkers.getIslah().M[EWorkers.screennum - 1].setSting(EWorkers.getIslah().M[EWorkers.screennum - 1].getSting() + newData);
 
                 Map mp = new Map();
                 mp.myContext = myContext;

@@ -2,22 +2,19 @@ package API;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-import Models.AC;
 import Models.Mod;
 import Models.User;
 
-public class IslahManzil {
-
+public class EWorkers {
 
     private User user = null;
-    private static IslahManzil islahManzil = null;
+    private static EWorkers EWorkers = null;
     public static int screennum;
     public Mod[] M = new Mod[10];
 
-    private IslahManzil() {
+    private EWorkers() {
         for (int i = 0; i < 10; i++)
             this.M[i] = new Mod("");
-
     }
 
     public void logout() {
@@ -25,17 +22,14 @@ public class IslahManzil {
         FirebaseAuth.getInstance().signOut();
     }
 
-    public static IslahManzil getIslah() {
-        if (islahManzil == null) {
-            islahManzil = new IslahManzil();
-
+    public static EWorkers getIslah() {
+        if (EWorkers == null) {
+            EWorkers = new EWorkers();
         }
-        return islahManzil;
+        return EWorkers;
     }
 
     public User getUser() {
-
-
         return user;
     }
 

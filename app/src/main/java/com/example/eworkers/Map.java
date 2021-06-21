@@ -38,7 +38,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-import API.IslahManzil;
+import API.EWorkers;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -174,7 +174,7 @@ public class Map extends Fragment implements OnMapReadyCallback{
                         e.printStackTrace();
                     }
                 } else {
-                    LatLng latLng = new LatLng(25, 51);
+                    LatLng latLng = new LatLng(30, 69);
                     Map.map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 8));
 
                 }
@@ -242,10 +242,7 @@ public class Map extends Fragment implements OnMapReadyCallback{
 
                         e.printStackTrace();
                     }
-
                 }
-
-
                 return false;
             }
 
@@ -270,7 +267,7 @@ public class Map extends Fragment implements OnMapReadyCallback{
                 else {
 
                     String newData = address.getLatitude()+"!@#"+address.getLongitude()+"!@#"+address.getAddressLine(0)+"^";
-                    IslahManzil.getIslah().M[IslahManzil.screennum - 1].setSting(IslahManzil.getIslah().M[IslahManzil.screennum - 1].getSting() + newData);
+                    EWorkers.getIslah().M[EWorkers.screennum - 1].setSting(EWorkers.getIslah().M[EWorkers.screennum - 1].getSting() + newData);
 
                     Electrician2 mp = new Electrician2();
                     mp.myContext = myContext;

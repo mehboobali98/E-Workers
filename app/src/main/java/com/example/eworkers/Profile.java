@@ -18,9 +18,6 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-
-
-
         UserViewModel uvm = new UserViewModel();
         uvm.getCurrenUser(FirebaseAuth.getInstance().getUid()).observe(this, new Observer<User>() {
             @Override
@@ -31,10 +28,5 @@ public class Profile extends AppCompatActivity {
                 phoneNumber.setText(user.getPhoneNumber().toString());
             }
         });
-
-
-
-
-
     }
 }

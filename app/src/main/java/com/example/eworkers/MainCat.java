@@ -29,7 +29,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Locale;
 
-import API.IslahManzil;
+import API.EWorkers;
 
 public class MainCat extends AppCompatActivity implements LocationListener, FurnitureTransfer.OnFragmentInteractionListener,PestControl.OnFragmentInteractionListener, Beautician.OnFragmentInteractionListener,Refrigerator.OnFragmentInteractionListener,WashingMachine.OnFragmentInteractionListener,HairDresses.OnFragmentInteractionListener, Laundary.OnFragmentInteractionListener, Plumber1.OnFragmentInteractionListener, AcMaintainence.OnFragmentInteractionListener, Electrician1.OnFragmentInteractionListener {
     private void handleLocationTasks() {
@@ -40,7 +40,6 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             LatLng latLng = new LatLng(25, 51);
             Map.map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 8));
         }
-
     }
 
     private void getLocation() {
@@ -109,10 +108,7 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             }
         });
 
-
-
-
-        if(IslahManzil.screennum == 3) {
+        if(EWorkers.screennum == 3) {
             Electrician1 firstFrag = new Electrician1();
             firstFrag.myContext = this;
             Button bt = (Button) findViewById(R.id.sb1);
@@ -124,10 +120,9 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             // add fragment to the fragment container layout
 
             getSupportFragmentManager().beginTransaction().add(R.id.fml, firstFrag).commit();
-
         }
 
-        else if(IslahManzil.screennum == 1) {
+        else if(EWorkers.screennum == 1) {
             Button bt = (Button) findViewById(R.id.sb1);
             bt.setBackgroundResource(R.drawable.rounded_yellow);
             Button bt2 = (Button) findViewById(R.id.sb2);
@@ -141,7 +136,7 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
 
             getSupportFragmentManager().beginTransaction().add(R.id.fml, firstFrag).commit();
         }
-        else if(IslahManzil.screennum == 2)
+        else if(EWorkers.screennum == 2)
         {
             Button bt = (Button) findViewById(R.id.sb1);
             bt.setBackgroundResource(R.drawable.rounded_yellow);
@@ -158,7 +153,7 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             getSupportFragmentManager().beginTransaction().add(R.id.fml, firstFrag).commit();
 
         }
-        else if(IslahManzil.screennum == 4)
+        else if(EWorkers.screennum == 4)
         {
             Button bt = (Button) findViewById(R.id.sb1);
             bt.setBackgroundResource(R.drawable.rounded_yellow);
@@ -175,7 +170,7 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             getSupportFragmentManager().beginTransaction().add(R.id.fml, firstFrag).commit();
 
         }
-        else if(IslahManzil.screennum == 5)
+        else if(EWorkers.screennum == 5)
         {
             Button bt = (Button) findViewById(R.id.sb1);
             bt.setBackgroundResource(R.drawable.rounded_yellow);
@@ -192,7 +187,7 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             getSupportFragmentManager().beginTransaction().add(R.id.fml, firstFrag).commit();
 
         }
-        else if(IslahManzil.screennum == 6)
+        else if(EWorkers.screennum == 6)
         {
             Button bt = (Button) findViewById(R.id.sb1);
             bt.setBackgroundResource(R.drawable.rounded_yellow);
@@ -209,7 +204,7 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             getSupportFragmentManager().beginTransaction().add(R.id.fml, firstFrag).commit();
 
         }
-        else if(IslahManzil.screennum == 7)
+        else if(EWorkers.screennum == 7)
         {
             Button bt = (Button) findViewById(R.id.sb1);
             bt.setBackgroundResource(R.drawable.rounded_yellow);
@@ -226,7 +221,7 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             getSupportFragmentManager().beginTransaction().add(R.id.fml, firstFrag).commit();
 
         }
-        else if(IslahManzil.screennum == 8)
+        else if(EWorkers.screennum == 8)
         {
             Button bt = (Button) findViewById(R.id.sb1);
             bt.setBackgroundResource(R.drawable.rounded_yellow);
@@ -243,7 +238,7 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             getSupportFragmentManager().beginTransaction().add(R.id.fml, firstFrag).commit();
 
         }
-        else if(IslahManzil.screennum == 9)
+        else if(EWorkers.screennum == 9)
         {
             Button bt = (Button) findViewById(R.id.sb1);
             bt.setBackgroundResource(R.drawable.rounded_yellow);
@@ -260,7 +255,7 @@ public class MainCat extends AppCompatActivity implements LocationListener, Furn
             getSupportFragmentManager().beginTransaction().add(R.id.fml, firstFrag).commit();
 
         }
-        else if(IslahManzil.screennum ==10)
+        else if(EWorkers.screennum ==10)
         {
             Button bt = (Button) findViewById(R.id.sb1);
             bt.setBackgroundResource(R.drawable.rounded_yellow);

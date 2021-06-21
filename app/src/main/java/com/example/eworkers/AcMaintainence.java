@@ -15,7 +15,7 @@ import android.widget.Spinner;
 
 import java.util.ArrayList;
 
-import API.IslahManzil;
+import API.EWorkers;
 
 
 /**
@@ -90,7 +90,7 @@ public class AcMaintainence extends Fragment {
             @Override
 
             public void onClick(View v) {
-                if (IslahManzil.screennum==1)
+                if (EWorkers.screennum==1)
                 {
 
                     Spinner sp = (Spinner) root.findViewById(R.id.area1);
@@ -98,16 +98,13 @@ public class AcMaintainence extends Fragment {
                     Spinner sp3 = (Spinner) root.findViewById(R.id.unitype1);
                     Spinner sp4 = (Spinner) root.findViewById(R.id.numofunits1);
                     String newData = "AC MAINTAINENCE!@#" + sp.getSelectedItem().toString()+"!@#"+sp2.getSelectedItem().toString()+"!@#"+sp3.getSelectedItem().toString()+"!@#"+sp4.getSelectedItem().toString()+"^";
-                    IslahManzil.getIslah().M[IslahManzil.screennum - 1].setSting(IslahManzil.getIslah().M[IslahManzil.screennum - 1].getSting() + newData);
+                    EWorkers.getIslah().M[EWorkers.screennum - 1].setSting(EWorkers.getIslah().M[EWorkers.screennum - 1].getSting() + newData);
                 }
                 Map mp = new Map();
                 mp.myContext = myContext;
                 myContext.getSupportFragmentManager().beginTransaction().replace(R.id.fml, mp).commit();
             }
         });
-
-
-
         return root;
     }
 

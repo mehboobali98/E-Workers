@@ -17,12 +17,8 @@ import Models.Mod;
 public class AdminMap extends AppCompatActivity implements OnMapReadyCallback {
     GoogleMap map;
     SupportMapFragment mapFragment;
-
-
     Address address = null;
-
     OnMapReadyCallback thisFrag = this;
-
     public static Mod currentMod;
 
     @Override
@@ -50,7 +46,6 @@ public class AdminMap extends AppCompatActivity implements OnMapReadyCallback {
         map.addMarker(new MarkerOptions().position(latLng).title(location[2]));
         map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 20));
 
-        //map.getUiSettings().setMyLocationButtonEnabled(true);
         map.getUiSettings().setAllGesturesEnabled(true);
         map.getUiSettings().setMyLocationButtonEnabled(true);
         map.getUiSettings().setCompassEnabled(true);

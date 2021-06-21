@@ -63,10 +63,7 @@ public class SignUp extends AppCompatActivity {
                 // ...
 
                 Toast.makeText(getApplicationContext(), "ERROR. Please check Internet Connection.", Toast.LENGTH_SHORT).show();
-
             }
-
-
         }
     }
 
@@ -76,8 +73,6 @@ public class SignUp extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up1);
-
-
 
         final EditText emailField = (EditText)findViewById(R.id.emailField);
         final EditText passField = (EditText)findViewById(R.id.passwordField);
@@ -134,7 +129,6 @@ public class SignUp extends AppCompatActivity {
 
         });
 
-
     }
 
     public void signUpFacebook(View view) {
@@ -163,6 +157,5 @@ public class SignUp extends AppCompatActivity {
                         .build(),
                 RC_SIGN_IN_GMAIL);
     }
-
 
 }

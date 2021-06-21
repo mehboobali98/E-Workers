@@ -15,7 +15,6 @@ import Models.Mod;
 public class OrderItemUserAdapter extends RecyclerView.Adapter<OrderItemUserAdapter.OrderItemUserViewHolder> {
 
     List<Mod> orderList;
-
     OnOrderClick click;
 
     public OrderItemUserAdapter(List<Mod> ls, OnOrderClick click){

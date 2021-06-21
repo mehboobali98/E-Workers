@@ -8,8 +8,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
 public class ForgotPassword extends AppCompatActivity {
 
     @Override
@@ -18,13 +16,10 @@ public class ForgotPassword extends AppCompatActivity {
         setContentView(R.layout.activity_forgot_password);
     }
 
-
-
     public void btn_reset(View view) {
 
-            TextView tv = (TextView)findViewById(R.id.textView3);
-            tv.setText("12345");
-
+        TextView tv = (TextView)findViewById(R.id.textView3);
+        tv.setText("12345");
 
         AlertDialog alertDialog = new AlertDialog.Builder(ForgotPassword.this).create();
         alertDialog.setTitle("Alert");
@@ -36,9 +31,5 @@ public class ForgotPassword extends AppCompatActivity {
                     }
                 });
         alertDialog.show();
-
-
-
-
     }
 }

@@ -34,8 +34,8 @@ import com.smarteist.autoimageslider.SliderView;
 import java.util.ArrayList;
 import java.util.List;
 
+import API.EWorkers;
 import API.FirebaseRepository;
-import API.IslahManzil;
 import API.SliderAdapterExample;
 import API.SliderItem;
 import API.Strings;
@@ -113,7 +113,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent myIntent = new Intent(getActivity(),
                         MainCat.class);
-                IslahManzil.screennum = 3;
+                EWorkers.screennum = 3;
                 startActivity(myIntent);
             }
         });
@@ -130,7 +130,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent myIntent = new Intent(getActivity(),
                         MainCat.class);
-                IslahManzil.screennum = 1;
+                EWorkers.screennum = 1;
                 startActivity(myIntent);
             }
         });
@@ -147,7 +147,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent myIntent = new Intent(getActivity(),
                         MainCat.class);
-                IslahManzil.screennum = 2;
+                EWorkers.screennum = 2;
                 startActivity(myIntent);
             }
         });
@@ -164,7 +164,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent myIntent = new Intent(getActivity(),
                         MainCat.class);
-                IslahManzil.screennum = 4;
+                EWorkers.screennum = 4;
                 startActivity(myIntent);
             }
         });
@@ -182,7 +182,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent myIntent = new Intent(getActivity(),
                         MainCat.class);
-                IslahManzil.screennum = 5;
+                EWorkers.screennum = 5;
                 startActivity(myIntent);
             }
         });
@@ -200,7 +200,7 @@ public class HomeFragment extends Fragment {
             public void onClick(View v) {
                 Intent myIntent = new Intent(getActivity(),
                         MainCat.class);
-                IslahManzil.screennum = 6;
+                EWorkers.screennum = 6;
                 startActivity(myIntent);
             }
         });
@@ -225,7 +225,7 @@ public class HomeFragment extends Fragment {
                         public void onClick(View v) {
                             Intent myIntent = new Intent(getActivity(),
                                     MainCat.class);
-                            IslahManzil.screennum = 7;
+                            EWorkers.screennum = 7;
                             startActivity(myIntent);
                         }
                     });
@@ -263,7 +263,7 @@ public class HomeFragment extends Fragment {
                         public void onClick(View v) {
                             Intent myIntent = new Intent(getActivity(),
                                     MainCat.class);
-                            IslahManzil.screennum = 8;
+                            EWorkers.screennum = 8;
                             startActivity(myIntent);
                         }
 
@@ -300,7 +300,7 @@ public class HomeFragment extends Fragment {
                         public void onClick(View v) {
                             Intent myIntent = new Intent(getActivity(),
                                     MainCat.class);
-                            IslahManzil.screennum = 9;
+                            EWorkers.screennum = 9;
                             startActivity(myIntent);
                         }
                     });
@@ -336,7 +336,7 @@ public class HomeFragment extends Fragment {
                         public void onClick(View v) {
                             Intent myIntent = new Intent(getActivity(),
                                     MainCat.class);
-                            IslahManzil.screennum = 10;
+                            EWorkers.screennum = 10;
                             startActivity(myIntent);
                         }
                     });

@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import API.IslahManzil;
+import API.EWorkers;
 
 
 /**
@@ -81,7 +81,7 @@ public class Plumber1 extends Fragment {
                 Spinner sp3 = (Spinner) root.findViewById(R.id.housetype2);
                 String newData = "PLUMBER!@#" + sp.getSelectedItem().toString()+"!@#"+sp2.getSelectedItem().toString()+ "!@#" +sp3.getSelectedItem().toString() +"^";
 
-                IslahManzil.getIslah().M[IslahManzil.screennum - 1].setSting(IslahManzil.getIslah().M[IslahManzil.screennum - 1].getSting() + newData);
+                EWorkers.getIslah().M[EWorkers.screennum - 1].setSting(EWorkers.getIslah().M[EWorkers.screennum - 1].getSting() + newData);
 
                 Map mp = new Map();
                 mp.myContext = myContext;

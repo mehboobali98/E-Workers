@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Spinner;
 
-import API.IslahManzil;
+import API.EWorkers;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -73,7 +73,7 @@ public class Refrigerator extends Fragment {
             public void onClick(View v) {
                 Spinner sp = (Spinner) root.findViewById(R.id.area5);
                 String newData =  "REFRIGERATOR!@#" + sp.getSelectedItem().toString() + "^";
-                IslahManzil.getIslah().M[IslahManzil.screennum - 1].setSting(IslahManzil.getIslah().M[IslahManzil.screennum - 1].getSting() + newData);
+                EWorkers.getIslah().M[EWorkers.screennum - 1].setSting(EWorkers.getIslah().M[EWorkers.screennum - 1].getSting() + newData);
 
                 Map mp = new Map();
                 mp.myContext = myContext;
