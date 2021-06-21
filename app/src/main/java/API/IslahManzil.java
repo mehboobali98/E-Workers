@@ -12,21 +12,21 @@ public class IslahManzil {
     private User user = null;
     private static IslahManzil islahManzil = null;
     public static int screennum;
-    public Mod []M= new Mod[10];
+    public Mod[] M = new Mod[10];
 
-    private IslahManzil(){
-        for(int i = 0; i<10;i++)
+    private IslahManzil() {
+        for (int i = 0; i < 10; i++)
             this.M[i] = new Mod("");
 
     }
 
-    public void logout(){
+    public void logout() {
         user = null;
         FirebaseAuth.getInstance().signOut();
     }
 
-    public static IslahManzil getIslah(){
-        if(islahManzil == null) {
+    public static IslahManzil getIslah() {
+        if (islahManzil == null) {
             islahManzil = new IslahManzil();
 
         }
