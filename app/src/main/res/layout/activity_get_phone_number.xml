@@ -24,7 +24,7 @@
             android:id="@+id/ac"
             android:layout_width="match_parent"
             android:layout_height="362dp"
-            app:srcCompat="@drawable/logoasd" />
+            app:srcCompat="@drawable/workers_logo" />
 
         <TextView
             android:id="@+id/textView10"
@@ -59,7 +59,7 @@
                 android:layout_weight="1"
                 android:background="@drawable/blackrounded"
                 android:gravity="center"
-                android:text="+974"
+                android:text="+92"
                 android:textAlignment="center" />
 
             <EditText

@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.eworkers.Login"
     android:screenOrientation="portrait"
-    >
+    tools:context="com.example.eworkers.Login">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -36,8 +35,8 @@
                     android:id="@+id/imageView4"
                     android:layout_width="match_parent"
                     android:layout_height="300dp"
-                    android:src="@drawable/logo"
-                    tools:srcCompat="@drawable/logo" />
+                    android:src="@drawable/workers_logo"
+                    tools:srcCompat="@drawable/workers_logo" />
 
                 <TextView
                     android:id="@+id/textView5"
@@ -52,7 +51,6 @@
 
                 <TextView
                     android:id="@+id/textView"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -65,13 +63,10 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textEmailAddress"
-
-
                     android:textColor="@color/textColor" />
 
                 <TextView
                     android:id="@+id/textView4"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Password:"
@@ -84,7 +79,6 @@
                     android:ems="10"
                     android:inputType="textPassword"
                     android:outlineAmbientShadowColor="@color/textColor"
-
                     android:textColor="@color/textColor" />
 
                 <Button
@@ -94,12 +88,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:background="@drawable/not_rounded"
-
                     android:onClick="signInTapped"
                     android:text="Sign In"
-                    android:textColor="@color/textColor"
-
-                    />
+                    android:textColor="@color/textColor" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -116,7 +107,6 @@
                         android:gravity="right"
                         android:text="Don't Have an Account?"
                         android:textColor="@color/textColor"
-
                         android:textSize="18sp"
                         android:textStyle="bold" />
 
@@ -129,7 +119,6 @@
                         android:gravity="right"
                         android:onClick="signUpTapped"
                         android:text="Sign Up"
-
                         android:textColor="@color/textColor"
                         android:textSize="18sp"
                         android:textStyle="bold" />

@@ -157,8 +157,7 @@ public class Map extends Fragment implements OnMapReadyCallback{
 
 
                         if (Map.currLocation == null) {
-                            //to-do add pakistan coordinates
-                            LatLng latLng = new LatLng(25, 51);
+                            LatLng latLng = new LatLng(30, 69);
                             Map.map.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 8));
 
                         } else {
