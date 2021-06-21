@@ -4,6 +4,8 @@
 
 E-Workers is a home services Android application for hiring workers for day to day tasks. The aim of the app is to make these tasks easy and convenient for the users. Workers can be hired on the app with a few simple clicks. The app will provide an authentication system for login and signup. The user will also verify his phone number for successful profile completion. Every order will contain the location and details of the customer. The admin will be notified of these details and can proceed accordingly to deliver the services that the customer has asked for. Since the app needs to be accessed by various online users, it will use Firebase Firestore as the database and Firebase Authentication for authentication of user credentials.
 
+<br>
+
 ## Functional requirements and Architectural analysis
 
 * For the Users:
@@ -39,3 +41,6 @@ E-Workers is a home services Android application for hiring workers for day to d
     3. View details of a particular home service
     4. Logout
 
+<br>
+
+## Project Status: In-Progress 🚧
