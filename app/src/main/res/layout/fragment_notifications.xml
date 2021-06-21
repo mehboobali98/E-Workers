@@ -58,17 +58,6 @@
             android:textSize="20sp" />
 
         <TextView
-            android:id="@+id/textView13"
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/rounded_yellow"
-            android:text=" Rate App"
-            android:textAlignment="center"
-            android:textColor="@color/sett"
-            android:textSize="20sp" />
-
-        <TextView
             android:id="@+id/about"
             android:layout_width="match_parent"
             android:layout_height="35dp"

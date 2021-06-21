@@ -37,7 +37,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="200dp"
                     android:maxHeight="500dp"
-                    app:srcCompat="@drawable/logo" />
+                    app:srcCompat="@drawable/workers_logo" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -52,7 +52,6 @@
 
                 <TextView
                     android:id="@+id/textView11"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Email:"
@@ -68,7 +67,6 @@
 
                 <TextView
                     android:id="@+id/textView12"
-
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Password:"
@@ -88,7 +86,6 @@
                     android:layout_height="wrap_content"
                     android:text="Confirm Password"
                     android:textColor="@color/textColor"
-
                     />
 
                 <EditText
