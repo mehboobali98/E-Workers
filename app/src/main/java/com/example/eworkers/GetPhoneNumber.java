@@ -312,7 +312,7 @@ public class GetPhoneNumber extends AppCompatActivity {
 
         else {
             PhoneAuthProvider.getInstance().verifyPhoneNumber(
-                    "+974" + phone.getText().toString(),        // Phone number to verify
+                    "+92" + phone.getText().toString(),        // Phone number to verify
                     60,                 // Timeout duration
                     TimeUnit.SECONDS,   // Unit of timeout
                     this,               // Activity (for callback binding)
