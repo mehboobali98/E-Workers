@@ -157,15 +157,6 @@
                     android:onClick="singUpGmail"
                     android:text="@string/fui_sign_in_with_google" />
 
-                <Button
-                    android:id="@+id/button5"
-                    style="@style/FirebaseUI.Button.AccountChooser.FacebookButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:onClick="signUpFacebook"
-                    android:text="@string/fui_sign_in_with_facebook" />
-
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
