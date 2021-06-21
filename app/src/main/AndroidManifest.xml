@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar"
         >
+        <service android:name=".AuthenticationService"
+            android:enabled="true"
+            android:exported="false"/>
         <activity android:name=".AboutApp" tools:ignore="LockedOrientationActivity" android:screenOrientation="portrait"></activity>
         <activity android:name=".EmailUs" tools:ignore="LockedOrientationActivity" android:screenOrientation="portrait"/>
         <activity android:name=".OrderCompletition" tools:ignore="LockedOrientationActivity" android:screenOrientation="portrait"/>
