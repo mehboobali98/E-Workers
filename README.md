@@ -20,10 +20,9 @@ E-Workers is a home services Android application for hiring workers for day to d
         * Selecting the area (using google map API) where the service is required.
         * System shall show order completion when it is placed successfully.
 
-    4. Verification of phone number
-    5. View order history
-    6. Share app
-    7. View profile
+    4. View order history
+    5. Share app
+    6. View profile
 
 * For the Admin:
 
