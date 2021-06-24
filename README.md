@@ -22,7 +22,7 @@ E-Workers is a home services Android application for hiring workers for day to d
 
     4. View order history
     5. Share app
-    6. View profile
+    6. View profile details
 
 * For the Admin:
 
